@@ -1,16 +1,35 @@
 Q1 - 2
-Q2 - fruits[1]
+
+Q2 - console.log(fruits[1]);
+// 출력하는 console.log 부분을 안써서 틀렸던 것 같다..
+
 Q3 - 짝수입니다.
+
 Q4 - while문에서는 출력되는 결과물이 없다.
     do-while문에서는 number:9 가 출력된다.
-Q5 - 
-Q6 - 
-Q7 - let answer = (isLogin) ? "환영합니다!" : "접근 권한이 없습니다.";
-    console.log(answer);
 
-Q8 -do{
-        let userInput = prompt("무엇을 말하고 싶나요?");
-    }while (userInput != "끝")
+Q5 - textContent = count;
+// count에 1을 더하고, 그 내용을 textContent를 사용해 count값을 출력한다.
+
+Q6 - 
+const lion = () => {
+    console.log("자바스크립트 마스터를 해보자!");
+};
+lion();
+// function 키워드 대신 => 를 사용하여 함수를 간결하게 표현
+
+Q7 - 
+const isLogin = true;
+const answer = isLogin ? "환영합니다!" : "접근 권한이 없습니다.";
+console.log(answer);
+// 처음에 isLogin를 값을 안 넣고 삼항 연산자만 적어서 틀렸던것같다.
+
+Q8 -
+let userInput;
+do {
+    userInput = prompt("무엇을 말하고 싶나요?");
+} while (userInput !== "끝");
+// 이건,, userInput !== "끝" 이거에.. != 이라고 써서 틀렸던것같다.
 
 Q9 - 
 let num = 1;
@@ -22,21 +41,35 @@ while (num<=userInput) {
 }
 alert("1부터 " + userInput + "까지의 합은 " + sum + "입니다.");
 
-Q10 - a = "new" , arr = ["old", 10, 233, true, "new"]
+Q10 - a = 5 , arr = ["old", 10, 233, true, "new"]
     b = "old" , arr = [10, 233, true]
+// push()는 배열의 맨 뒤에 새로운 요소를 추가하고 배열의 새로운 길이를 반환한다.
 
-Q11 - 
-Q12 - person = hobby.drawing
-Q13 - const idButton = document.getElementById("neme");
-    let num = 1;
+Q11 - appendChild
+// .appendChild(추가할요소) - 자식 요소를 추가, 추가할 요소는 따로 선택해야한다..
+
+Q12 - person.hobby = "drawing";
+    person["hobby"] = "drawing";
+// 프로퍼티를 추가할 때는 객체명.키 = "값"; 또는 객체명["키"] = "값";
+
+Q13 - 
+let count = 1;
+function change() {
+    count++;
+    const nameCount = document.getElementById("name");
+    nameCount.innerText = "likelion_" + count;
+}
+// nameCount라는 변수에 name이라는 id를 가진 버튼을 클릭했을 때 함수에서 count에 1을 증가시키고
+// innerText를 사용해서 "likelion_" + count 를 화면에 출력한다.
 
 Q14 - 
 const btn = document.querySelector("btn")
-btn.removeEventListener("click", () =>{
+btn.addEventListener("click", () =>{
     alert("버튼이클릭됨!");
 })
 
 const btn = document.getElementById("btn")
-btn. = () =>{
+btn.onclick = () =>{
     alert("버튼이 클릭됨!");
 }
+// 이벤트함수 등록 방식,, addEventListener이랑 onclick이 있다.
