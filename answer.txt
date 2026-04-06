@@ -1,0 +1,49 @@
+q1. 2
+q2. fruits[1]
+q3. 짝수입니다.
+q4. 
+while문
+출력 X
+do-while문
+number : 9
+q5. innerHTML
+q6. lion.functnion() => {console.log("자바스크립트 마스터를 해보자!");}
+q7. if answer(isLogin ? "환영합니다!" : "접근 권한이 없습니다.");
+console.log(anwer);
+q8. do{
+    let userInput = prompt("무엇을 말하고 싶나요?");
+}while (userInput="끝")
+q9. 
+let userInput = prompt("숫자를 입력하세요:");
+let sum = 0;
+while(userInput=1){
+    sum = sum + Num(userInput*(userInput-1));
+    Num(userInput)= Num(userInput) -1;
+}
+aler("1부터 " + userInput +"까지의 합은 " + sum + "입니다.");
+q10. 
+push()결과 : a = 5, arr=["old", 10 ,233, true, "new"]
+shift()결과 : b = 3, arr=["old", 10 ,233]
+
+q11.appendChild
+q12. person.hobby = drawing;
+    person= hobby["drawing"];
+
+q13.
+let cnt = 2;
+function change(){
+    const name1 = document.getElementById("name");
+    name1.innerHTML="likelion_"+ cnt;
+    ++cnt;
+}
+
+q14.
+const btn = document.getElementById("btn")
+btn.value("click", ()=>{
+    alert("버튼이클릭됨!");
+});
+
+const btn = document.getElementById("btn")
+btn.value=()=>{
+    alert("버튼이 클릭됨!");
+}
