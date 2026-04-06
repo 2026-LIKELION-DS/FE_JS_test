@@ -1,0 +1,42 @@
+Q1 - 2
+Q2 - fruits[1]
+Q3 - 짝수입니다.
+Q4 - while문에서는 출력되는 결과물이 없다.
+    do-while문에서는 number:9 가 출력된다.
+Q5 - 
+Q6 - 
+Q7 - let answer = (isLogin) ? "환영합니다!" : "접근 권한이 없습니다.";
+    console.log(answer);
+
+Q8 -do{
+        let userInput = prompt("무엇을 말하고 싶나요?");
+    }while (userInput != "끝")
+
+Q9 - 
+let num = 1;
+let sum = 0;
+let userInput = prompt("숫자를 입력하세요: ");
+while (num<=userInput) {
+    sum += num;
+    num++;
+}
+alert("1부터 " + userInput + "까지의 합은 " + sum + "입니다.");
+
+Q10 - a = "new" , arr = ["old", 10, 233, true, "new"]
+    b = "old" , arr = [10, 233, true]
+
+Q11 - 
+Q12 - person = hobby.drawing
+Q13 - const idButton = document.getElementById("neme");
+    let num = 1;
+
+Q14 - 
+const btn = document.querySelector("btn")
+btn.removeEventListener("click", () =>{
+    alert("버튼이클릭됨!");
+})
+
+const btn = document.getElementById("btn")
+btn. = () =>{
+    alert("버튼이 클릭됨!");
+}
