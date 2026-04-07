@@ -1,33 +1,47 @@
 q1. 2
-q2. fruits[1]
+✔️q2. console.log(fruits[1]);
+//fruits[]는 접근!! 값을 얻으려면 console.log() 사용
 q3. 짝수입니다.
 q4. 
 while문
 출력 X
 do-while문
 number : 9
-q5. innerHTML
+✔️q5. textContent = count
+//DOM 요소의 값을 바꿀 때는 textContent 사용
+
 q6. lion.functnion() => {console.log("자바스크립트 마스터를 해보자!");}
-q7. if answer(isLogin ? "환영합니다!" : "접근 권한이 없습니다.");
-console.log(anwer);
-q8. do{
-    let userInput = prompt("무엇을 말하고 싶나요?");
-}while (userInput="끝")
-q9. 
-let userInput = prompt("숫자를 입력하세요:");
+✔️q7. 
+let isLogin = true; //if문 전에 초기화!!
+let answer = isLogin ? "환영합니다!" : "접근 권한이 없습니다.";
+console.log(answer);
+// 변수도 삼항연산자로 설정할 수 있는걸 몰랐음!
+
+✔️q8. 
+let userInput; //변수 선언 반복문 밖에서 해야됨
+do{
+     userInput = prompt("무엇을 말하고 싶나요?");
+}while (userInput !=="끝") // 비교는 '=' 가 아니라  === 또는 !== 사용해야함
+✔️q9. 
+
+let userInput = prompt("숫자를 입력하세요:"); //prompot는 문자열 반환
 let sum = 0;
-while(userInput=1){
-    sum = sum + Num(userInput*(userInput-1));
-    Num(userInput)= Num(userInput) -1;
+let i =0;
+while(i <= userInput){
+    sum += i;
+    i++; 
 }
-aler("1부터 " + userInput +"까지의 합은 " + sum + "입니다.");
-q10. 
+alert("1부터 " + userInput +"까지의 합은 " + sum + "입니다.");
+//다 더하긴데 곱하기로 착각했다 ;;; while문 조건 잘 잡기.
+//그리고 Num()이 아니라 Number()로 숫자변환!
+✔️q10. 
 push()결과 : a = 5, arr=["old", 10 ,233, true, "new"]
-shift()결과 : b = 3, arr=["old", 10 ,233]
+shift()결과 : b = 3, arr=[true] //shift결과는 push랑 다르게 반환된 값!
 
 q11.appendChild
-q12. person.hobby = drawing;
-    person= hobby["drawing"];
+
+✔️q12. person.hobby = drawing;
+    person["hobby"]= "drawing"; //대괄호 안에는 key값.
 
 q13.
 let cnt = 2;
@@ -37,13 +51,16 @@ function change(){
     ++cnt;
 }
 
-q14.
-const btn = document.getElementById("btn")
-btn.value("click", ()=>{
+✔️q14.
+const btn = document.getElementById("btn") //아이디 얻어와서
+btn.addEventListener("click", ()=>{ //이벤트함수
     alert("버튼이클릭됨!");
 });
 
 const btn = document.getElementById("btn")
-btn.value=()=>{
+btn.onclick=()=>{
     alert("버튼이 클릭됨!");
 }
+
+//이벤트 등록 방법 2가지
+//onclick , addEventListener
