@@ -1,0 +1,117 @@
+Q2
+정답: fruits[1]`\
+
+오답: console.log(friuts[1]);
+
+틀린 이유: console.log()를 굳이 사용
+
+
+Q5
+정답: textContent = count;
+
+
+Q6
+정답:
+const lion = () => {
+	console.log("자바스크립트 마스터를 해보자!");
+}
+
+오답: lion => () {console.log("자바스크립트 마스터를 해보자!")}
+
+틀린 이유: const 선언 x, () / = / ⇒ 간 순서 오류, 세미콜론 부재
+
+
+Q7
+정답: const answer = isLogin ? "환영합니다!" : "접근 권한이 없습니다.";
+console.log(answer);
+
+오답: console.log(answer = isLogin ? 환영합니다! : 접근 권한이 없습니다.);
+
+틀린 이유: answer를 const answer로 먼저 선언하지 않고 console.log() 안에 한꺼번에 작성함, 조건에 따라 출력해야 하는 문구들에 큰따옴표 부재
+
+
+Q8
+정답:
+let userInput;
+
+do {
+    userInput = prompt("무엇을 말하고 싶나요?");
+} while (userInput !== "끝");
+
+오답: console.log(friuts[1]);
+
+틀린 이유: console.log()를 굳이 사용
+
+
+Q9
+정답:
+let userInput = prompt("숫자를 입력하세요");
+let sum = 0;
+let i = 1;
+let num = Number(userInput);
+
+while (i <= num) {
+	sum += i;
+	i++;
+}
+alert("1부터" + userInput + " 까지의 합은 " + sum + "입니다.");
+
+오답: 
+
+let sum = 0;
+let userInput = prompt("숫자를 입력하세요.");
+while (Number(userInput) = 10) {
+    sum += Number(userInput);
+    Number(userInput)++;
+}
+alert("1부터" + userInput + "까지의 합은" + sum + "입니다.");
+
+틀린 이유: i의 초기값 지정 x → 잘못된 sum값 누적 방식 & 카운트 추가 방식
+
+
+Q10
+정답: 
+a = 5
+arr = ["old", 10, 233, true, "new"]
+
+b = "old"
+arr = [10, 233, true, "new"]
+
+틀린 이유: a = “new”라고 작성
+
+a는 push한 값이 아닌 push한 후의 ‘배열 길이’
+
+b는 ‘shift된 값’
+
+
+Q11
+정답: appendChild
+
+오답: addChild
+
+
+Q12
+정답: `
+person.hobby = "drawing";
+person["hobby"] = "drawing";
+
+오답: person.hobby(drawing);, person.["hobby"] = drawing;
+
+
+Q13
+정답: 
+let count = 1;
+
+function change () {
+	count++;
+	document.getElementById("name").innerText = "likelion_" + count;
+}
+
+
+Q14
+정답:
+// 방식 1 - addEventListener 빈칸 순서대로
+getElementById, addEventListener, click
+
+// 방식 2 - onclick 빈칸 순서대로
+getElementById, onclick
